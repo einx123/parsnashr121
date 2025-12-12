@@ -13,7 +13,6 @@
     <br>
     <?php include('menu.php'); ?>
     <br>
-
     <div class="main">
         <?php
         $link = mysqli_connect('localhost', 'root', '', 'parsnashr');
@@ -44,24 +43,15 @@
                         <img src="postupload/<?php echo $row['file']; ?>" alt="News Image"
                             style="max-width:300px; max-height:300px;">
 
-                        <form method="POST" action="commdetails.php?id=<?php echo $codedet; ?>">
-                            <input type="text" placeholder="نظر خود را بنویسید" name="comment">
-                            <button type="submit">ارسال نظر</button>
-                        </form>
-
-                        <h4>نظرات:</h4>
-                        <?php
-                        while ($rowC = mysqli_fetch_assoc($resultC)) {
-                            ?>
-                            <p><?php echo $rowC['comment']; ?></p>
-                            <?php
-                        }
+                      <?php
                     }
+
+
                     ?>
 
                 </li>
             </ul>
-        </div>  
+        </div>
 
     </div>
 

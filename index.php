@@ -29,8 +29,7 @@
                         <?php
                         while ($row = mysqli_fetch_assoc($result)) {
                      
-                            ?>
-                            
+                            ?><pre><?php echo $row['author']; ?></pre>
                             <h3><?php
                             echo ($row['headabout'])
                                 ?></h3>

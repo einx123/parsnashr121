@@ -12,9 +12,6 @@ body {
     transform-style: preserve-3d;
 }
 
-/* ——————————————————————————————
-    SMOOTH GLASS COMPONENTS
-—————————————————————————————— */
 .header,
 .main,
 .footer {
@@ -53,9 +50,6 @@ body {
     box-shadow: 0 25px 60px rgba(255, 255, 255, 0.3);
 }
 
-/* ——————————————————————————————
-    HEADER
-—————————————————————————————— */
 .header h1 {
     font-size: 46px;
     font-weight: 800;
@@ -97,10 +91,6 @@ body {
         transform: translateY(0);
     }
 }
-
-/* ——————————————————————————————
-        ✨ IMPROVED STICKY MENU ✨
-—————————————————————————————— */
 .menu {
     position: sticky;
     top: 0;
@@ -119,7 +109,6 @@ body {
     animation: floatSmooth 9s ease-in-out infinite;
 }
 
-/* shrink & highlight when stuck */
 .menu.is-sticky {
     padding: 14px 22px;
     transform: scale(0.96) translateY(-4px);
@@ -170,9 +159,6 @@ body {
     color: #ff4b2b;
 }
 
-/* ——————————————————————————————
-    MAIN
-—————————————————————————————— */
 .main {
     font-size: 18px;
     color: #333;
@@ -194,9 +180,6 @@ body {
     }
 }
 
-/* ——————————————————————————————
-    FOOTER
-—————————————————————————————— */
 .footer {
     font-size: 15px;
     color: #333;
@@ -215,9 +198,6 @@ body {
     }
 }
 
-/* ——————————————————————————————
-    OTHER COMPONENTS (form, news…)
-—————————————————————————————— */
 .form {
     background: rgba(255, 255, 255, 0.18);
     border-radius: 28px;
@@ -335,10 +315,6 @@ button[type="reset"]:hover {
     background: rgba(255, 255, 255, 0.85);
     transform: scale(1.05);
 }
-
-/* ——————————————————————————————
-    NEWS SECTIONS
-—————————————————————————————— */
 .news {
     margin-top: 25px;
     padding: 25px;

@@ -52,7 +52,6 @@
             <button type="submit">به اشتراک گذاشتن</button>
             <button type="reset">انصراف</button>
 
-            <!-- نام نویسنده (پنهانی) -->
             <input type="hidden" name="author" value="<?php echo $username; ?>">
 
         </form>

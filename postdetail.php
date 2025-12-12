@@ -21,13 +21,13 @@
     $tempname = $_FILES["file"]["tmp_name"] ?? '';
     $folder = "postupload/" . $file ?? '';
     $details = $_POST['details'] ?? '';
-
+    $author = $_POST['author'] ?? '';
     $link = mysqli_connect('localhost', 'root', '', 'parsnashr');
 
     if (mysqli_connect_errno()) {
         echo 'خطا در ارتباط با دیتابیس!';
     } else {
-        $query = "INSERT INTO posts (headabout, about, file,details) VALUES ('$headabout', '$about', '$file','$details')";
+        $query = "INSERT INTO posts (headabout, about, file,details,author) VALUES ('$headabout', '$about', '$file','$details','$author')";
 
 
         if (mysqli_query($link, $query) === true) {
